@@ -20,7 +20,6 @@ RUN apk update && \
 		nano \
 		openntpd \
 		rsync \
-		tar \
 		transmission-daemon \
 		tzdata \
 		unzip \
