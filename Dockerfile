@@ -27,7 +27,7 @@ RUN apk update && \
 	tar xzf /tmp/s6-overlay-amd64.tar.gz -C / && \
 	echo "@testing http://dl-4.alpinelinux.org/alpine/edge/testing" >> /etc/apk/repositories && \
 	mkdir -p /transmission/{download,watch,incomplete,config} && \
-	&& chmod 1777 /transmission && \
+	chmod 1777 /transmission && \
 	ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && \
 	rm -fr /var/lib/apk/* && \
 	rm -rf /var/cache/apk/*
