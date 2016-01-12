@@ -51,5 +51,5 @@ CMD ["/usr/bin/transmission-daemon", \
 	"--rpc-password", "J3m3m0!5", \
 	"--rpc-port", "9091", \
 	"--rpc-username", "XtremXpert", \
-	"--rpc-whitelist-enabled", "false"
+	"--rpc-whitelist-enabled", "false" \
 	]
