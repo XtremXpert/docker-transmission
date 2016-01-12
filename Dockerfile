@@ -6,8 +6,12 @@ ENV LANG="fr_CA.UTF-8" \
 	LC_ALL="fr_CA.UTF-8" \
 	LANGUAGE="fr_CA.UTF-8" \
 	TZ="America/Toronto" \
+<<<<<<< HEAD
 	TERM="xterm" \
 	WHITELIST="64.228.227.3" \
+=======
+	TERM="xterm" \
+>>>>>>> parent of 789807b... Update Dockerfile
 	TRANSMISSION_HOME="/transmission/config"
 
 ADD https://github.com/just-containers/s6-overlay/releases/download/v1.11.0.1/s6-overlay-amd64.tar.gz /tmp/
