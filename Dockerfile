@@ -36,19 +36,4 @@ EXPOSE 9091
 
 ENTRYPOINT ["/init"]
 
-CMD ["/usr/bin/transmission-daemon", \
-	"--watch-dir", "/transmission/watch", \
-	"--encryption-preferred", \
-	"--foreground", \
-	"--config-dir", "/transmission/config", \
-	"--incomplete-dir", "/transmission/incomplete", \
-	"--dht", \
-	"--no-auth", \
-	"--download-dir", "/transmission/download" \
-	"--rpc-authentication-required", "true" \
-	"--rpc-enabled", "true", \
-	"--rpc-password", "J3m3m0!5", \
-	"--rpc-port", "9091", \
-	"--rpc-username", "XtremXpert", \
-	"--rpc-whitelist-enabled", "false" \
-	]
+CMD ["/usr/bin/transmission-daemon", "--foreground" ]
