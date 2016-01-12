@@ -6,15 +6,7 @@ ENV LANG="fr_CA.UTF-8" \
 	LC_ALL="fr_CA.UTF-8" \
 	LANGUAGE="fr_CA.UTF-8" \
 	TZ="America/Toronto" \
-<<<<<<< HEAD
 	TERM="xterm" \
-<<<<<<< HEAD
-	WHITELIST="64.228.227.3" \
-=======
-	TERM="xterm" \
->>>>>>> parent of 789807b... Update Dockerfile
-=======
->>>>>>> parent of a874af3... Update Dockerfile
 	TRANSMISSION_HOME="/transmission/config"
 
 ADD https://github.com/just-containers/s6-overlay/releases/download/v1.11.0.1/s6-overlay-amd64.tar.gz /tmp/
@@ -43,8 +35,4 @@ EXPOSE 9091
 
 ENTRYPOINT ["/init"]
 
-<<<<<<< HEAD
-CMD ["/usr/bin/transmission-daemon", "--foreground" ]
-=======
 CMD ["/usr/bin/transmission-daemon","--allowed", "127.*,10.*,192.168.*,172.16.*,172.17.*,172.18.*,172.19.*,172.20.*,172.21.*,172.22.*,172.23.*,172.24.*,172.25.*,172.26.*,172.27.*,172.28.*,172.29.*,172.30.*,172.31.*,169.254.*", "--watch-dir", "/transmission/watch", "--encryption-preferred", "--foreground", "--config-dir", "/transmission/config", "--incomplete-dir", "/transmission/incomplete", "--dht", "--no-auth", "--download-dir", "/transmission/download" ]
->>>>>>> parent of a874af3... Update Dockerfile
